@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v4 # Download the test to the VM
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: '17'
           distribution: 'focal' # Use the focal version
