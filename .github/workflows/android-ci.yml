@@ -12,7 +12,7 @@ jobs:
         uses: actions/setup-java@v5
         with:
           java-version: '17'
-          distribution: 'focal' # Use the focal version
+          distribution: 'temurin' # Use the focal version
 
       - name: Make gradlew executable # Make the script executable
         run: chmod +x ./gradlew # Make gradlew executable
