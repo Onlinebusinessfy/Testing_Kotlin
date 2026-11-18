@@ -22,6 +22,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        // This line cause the app to leak memory -- storing the acivity context in a singleton
+        // AppState.initialize(this.applicationContext)
         setContent {
             TodoCh12Theme {
                 Surface(
